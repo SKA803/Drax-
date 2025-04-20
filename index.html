@@ -535,6 +535,12 @@
                 </div>
             </div>
             
+            <!-- حقل العنوان المضاف -->
+            <div class="form-group">
+                <label for="address">العنوان بالكامل*</label>
+                <textarea id="address" required placeholder="شارع - مبنى - شقة - منطقة - أقرب علامة مميزة"></textarea>
+            </div>
+            
             <div class="form-row">
                 <div class="form-group">
                     <label for="governorate">المحافظة*</label>
@@ -614,1041 +620,4 @@
                     <div class="quantity-selector" style="margin-top: 15px;">
                         <button type="button" class="quantity-btn" id="decreaseCase">-</button>
                         <input type="number" id="caseQuantity" class="quantity-input" value="0" min="0" max="10">
-                        <button type="button" class="quantity-btn" id="increaseCase">+</button>
-                        <span style="margin-right: 10px;">الكمية المطلوبة</span>
-                    </div>
-                </div>
-            </div>
-        </form>
-        
-        <div class="services-section">
-            <h2 class="section-title">الخدمات الإضافية</h2>
-            <p>اختر من بين خدماتنا الإضافية لتحصل على أفضل تجربة</p>
-            
-            <h3 style="margin: 20px 0 10px; color: var(--primary-color);">الكورسات التدريبية</h3>
-            <div class="services-grid">
-                <!-- كورس البرمجة -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس البرمجة</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تعلم أساسيات البرمجة بلغات مختلفة مثل Python, Java, C++</p>
-                    <button class="details-btn" data-service="programming" data-image="e1.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس البرمجة" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- كورس اوفيس 360 -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس اوفيس 360</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تعلم استخدام حزمة مايكروسوفت أوفيس 360 باحترافية</p>
-                    <button class="details-btn" data-service="office" data-image="e2.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس اوفيس 360" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- كورس ويندوز -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس ويندوز</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تعلم إدارة وتثبيت وصيانة أنظمة ويندوز</p>
-                    <button class="details-btn" data-service="windows" data-image="e3.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس ويندوز" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- كورس اللغات -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس اللغات</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تحسين مهاراتك في اللغة الإنجليزية أو لغات أخرى</p>
-                    <button class="details-btn" data-service="languages" data-image="e4.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس اللغات" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- كورس HR -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس HR</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تعلم إدارة الموارد البشرية ومهارات التوظيف</p>
-                    <button class="details-btn" data-service="hr" data-image="e5.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس HR" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- كورس IT -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس IT</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">أساسيات تكنولوجيا المعلومات وإدارة الأنظمة</p>
-                    <button class="details-btn" data-service="it" data-image="e6.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس IT" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- ورشة صيانة هواتف -->
-                <div class="service-card">
-                    <h4 class="service-title">ورشة صيانة هواتف</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تعلم إصلاح أعطال الهواتف الذكية</p>
-                    <button class="details-btn" data-service="phones" data-image="e7.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="ورشة صيانة هواتف" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-                
-                <!-- كورس صيانة الأدوات المنزلية -->
-                <div class="service-card">
-                    <h4 class="service-title">كورس صيانة الأدوات المنزلية</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">تعلم إصلاح الأجهزة المنزلية الأساسية</p>
-                    <button class="details-btn" data-service="home" data-image="e8.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="كورس صيانة الأدوات المنزلية" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-            </div>
-            
-            <h3 style="margin: 30px 0 10px; color: var(--primary-color);">خدمات ترفيهية</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h4 class="service-title">هارد 500 ترفيه</h4>
-                    <div class="service-price">100 جنيه</div>
-                    <p class="service-desc">استمتع بأحدث الأفلام والمسلسلات من مختلف التصنيفات، سواء كنت من عشّاق الأكشن، الدراما أو الكوميديا. تابع إنتاجات نتفليكس، ديزني، وHBO لأفضل تجربة ترفيهية منزلية.
-
-</p>
-                    <button class="details-btn" data-service="flash" data-image="e9.png">تفاصيل</button>
-                    <label class="service-checkbox" style="display: block; margin-top: 10px;">
-                        <input type="checkbox" class="service-option" value="فلاشة الكورسات والبرامج" data-price="100"> إضافة إلى الطلب
-                    </label>
-                </div>
-            </div>
-        </div>
-        
-        <div class="order-summary">
-            <h2 class="section-title">ملخص الطلب</h2>
-            
-            <div id="selectedItemsList" class="items-list">
-                <!-- Items will be added here dynamically -->
-                <p style="text-align: center; color: #999;">سيظهر هنا تفاصيل الطلب المختارة</p>
-            </div>
-            
-            <div class="summary-item summary-total">
-                <span>الإجمالي:</span>
-                <span id="totalPrice">0 جنيه</span>
-            </div>
-            
-            <button type="submit" class="btn btn-whatsapp" id="submitOrder" style="width: 100%; margin-top: 20px; padding: 15px;">
-                <i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب
-            </button>
-        </div>
-    </div>
-    
-    <!-- Modal for service details -->
-    <div class="modal" id="serviceModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h3 id="modalTitle">تفاصيل الخدمة</h3>
-            <div id="modalContent">
-                <div class="service-images">
-                    <img src="" alt="Service Image" id="serviceImage">
-                </div>
-                <div id="serviceDescription" class="service-details-content"></div>
-                <p style="margin-top: 10px; font-weight: bold;" id="servicePrice"></p>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Generate random order ID
-            const orderNumber = Math.floor(10000 + Math.random() * 90000);
-            document.getElementById('orderNumber').textContent = orderNumber;
-            
-            // Governorate change handler
-            const governorateSelect = document.getElementById('governorate');
-            const shippingCostInput = document.getElementById('shippingCost');
-            
-            governorateSelect.addEventListener('change', function() {
-                const governorate = this.value;
-                let shippingCost = '0 جنيه';
-                
-                if (governorate.includes('القاهرة') || governorate.includes('الجيزة') || governorate.includes('القليوبية')) {
-                    shippingCost = '35 جنيه';
-                } else if (governorate.includes('الإسكندرية') || governorate.includes('البحيرة') || 
-                           governorate.includes('المنوفية') || governorate.includes('الغربية') || 
-                           governorate.includes('الدقهلية') || governorate.includes('كفر الشيخ') || 
-                           governorate.includes('الشرقية') || governorate.includes('دمياط') || 
-                           governorate.includes('بورسعيد') || governorate.includes('السويس') || 
-                           governorate.includes('الإسماعيلية')) {
-                    shippingCost = '40 جنيه';
-                } else if (governorate.includes('شمال سيناء') || governorate.includes('جنوب سيناء') || 
-                          governorate.includes('البحر الأحمر') || governorate.includes('الفيوم') || 
-                          governorate.includes('بني سويف') || governorate.includes('المنيا') || 
-                          governorate.includes('أسيوط')) {
-                    shippingCost = '45 جنيه';
-                } else if (governorate) {
-                    shippingCost = '50 جنيه';
-                } else {
-                    shippingCost = 'سيتم تحديدها بعد اختيار المحافظة';
-                }
-                
-                shippingCostInput.value = shippingCost;
-                updateOrderSummary();
-            });
-            
-            // Product selection
-            const productOptions = document.querySelectorAll('.product-option');
-            const productInput = document.getElementById('product');
-            const priceInput = document.getElementById('price');
-            
-            productOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    // Remove selected class from all options
-                    productOptions.forEach(opt => opt.classList.remove('selected'));
-                    
-                    // Add selected class to clicked option
-                    this.classList.add('selected');
-                    
-                    // Update product and price inputs
-                    productInput.value = this.getAttribute('data-product');
-                    priceInput.value = this.getAttribute('data-price');
-                    
-                    updateOrderSummary();
-                });
-            });
-            
-            // Hard case quantity management
-            const decreaseBtn = document.getElementById('decreaseCase');
-            const increaseBtn = document.getElementById('increaseCase');
-            const caseQuantity = document.getElementById('caseQuantity');
-            
-            decreaseBtn.addEventListener('click', function() {
-                let currentVal = parseInt(caseQuantity.value);
-                if (currentVal > 0) {
-                    caseQuantity.value = currentVal - 1;
-                    updateOrderSummary();
-                }
-            });
-            
-            increaseBtn.addEventListener('click', function() {
-                let currentVal = parseInt(caseQuantity.value);
-                if (currentVal < 10) {
-                    caseQuantity.value = currentVal + 1;
-                    updateOrderSummary();
-                }
-            });
-            
-            caseQuantity.addEventListener('change', function() {
-                let value = parseInt(this.value);
-                if (isNaN(value) || value < 0) this.value = 0;
-                if (value > 10) this.value = 10;
-                updateOrderSummary();
-            });
-            
-            // Service details templates
-            const serviceDetails = {
-                'flash': `
-                    <h4 class="service-section-title"> تفاصيل المحتوى الترفيه</h4>
-                       <h3>قسم الأفلام والمسلسلات:</h3>
-        <ul class="entertainment-list">
-            <li>أفلام عربية من 2019 حتى 2024</li>
-            <li>مسلسلات عربية 2024</li>
-            <li>مسلسل بكار</li>
-            <li>توم وجيري</li>
-            <li>أفلام ديزني</li>
-                    </ul>
-                `,
-                'programming': `
-                    <h4 class="service-section-title">تفاصيل كورس البرمجة:</h4>
-                <div class="courses-programs">
-    <p>تعلم أساسيات البرمجة بلغات مختلفة مثل Python, Java, C++</p>
-   
-     
-    </ul>
-
-    <h2>💢 قسم الكورسات 💢 و 💢 قسم البرامج 💢</h2>
-    <p>تفاصيل الفلاشه :<br>
-    تفاصيل الكورسات : ( محاضرات فيديو متسلسه ومرتبه وسهله التعلم الفلاشه كورسات وبرامج والبرامج مفعله مدي الحياه)</p>
-    
-    <h3>اولا قسم الكورسات :</h3>
-    <ul class="courses-list">
-        <li>💢-كورس موبايل ابلكيشن android Studio</li>
-        <li>💢- كورس HTML 5 +HTML</li>
-        <li>💢-كورس CSS</li>
-        <li>💢- كورس جافا سكريبت</li>
-        <li>💢-كورس bootstap</li>
-        <li>💢-كورس J QUERY</li>
-        <li>💢- كورس Angular</li>
-        <li>💢- كورس SQL</li>
-        <li>💢- كورس PHP</li>
-        <li>💢-كورس تعليمى للغه البرمجه سى شارب</li>
-        <li>💢- كورس تعليمى للغه البرمجه c ++</li>
-        <li>💢- كورس تعليمى للغه البرمجه جافا</li>
-        <li>💢-كورس Data Structure</li>
-        <li>💢- كورس Algorithm</li>
-        <li>💢- كورس Ajax</li>
-        <li>💢- كورس اوبجكت اورينتد oop</li>
-        <li>💢- كورس صناعه الالعاب unity</li>
-        <li>💢- كورس شبكات ccna+ccnp</li>
-        <li>💢 ـ كورس تهكير العاب الاندرويد</li>
-        <li>💢 ـ كورس الهكر الاخلاقي لحماية واختراق الصفحات والهواتف</li>
-        <li>💢ـ كورس الميتاسبلويت</li>
-        <li>💢 ـ كورس الانترنت المظلم</li>
-        <li>💢 ـ كورس استغلال الثغرات</li>
-        <li>💢 ـ كورس اختراق باستخدام كالي لينكس</li>
-        <li>💢 - كورس بايثون</li>
-        <li>💢كورس امن سييراني cyber security</li>
-    </ul>
-
-    <h3>ثانياً قسم البرامج :-</h3>
-    <ul class="programs-list">
-        <li>💢"kali linux"</li>
-        <li>💢"Android Studio"</li>
-        <li>💢"Visual Studio Code"</li>
-        <li>💢"Tenorshare ReiBoot for Android Pro "</li>
-        <li>💢"Microsoft Visual C++ 2005-2022 💢Redistributable Package Hybrid "</li>
-        <li>💢"DMSoft DBSync for Access and MSSQL "</li>
-        <li>💢"JP Software CMDebug (x64) "</li>
-        <li>💢"OzCode for Visual Studio 2022 "</li>
-        <li>💢"Sublime Merge 2 Build 2091 (x64)"</li>
-        <li>💢"Sublime Text 4 Build 4169 (x64)"</li>
-        <li>💢"EasyCode Eng"</li>
-        <li>💢"ShowKeyPlusx64.exe"</li>
-        <li>💢"HTML Compiler 2024 (x64)"</li>
-        <li>💢"Steelray Project Analyzer "</li>
-        <li>💢"genymotion--vbox. "</li>
-        <li>💢"AtomSetup-x64.rar"</li>
-        <li>💢"MetaProducts Offline Explorer Enterprise "</li>
-        <li>💢"CoffeeCup HTML Editor 18.0 Build 890"</li>
-        <li>💢"Coolutils Total HTML Converter "</li>
-        <li>💢"CodeLobster IDE Professional 2.5 "</li>
-        <li>💢"Blumentals Rapid PHP 2022 "</li>
-        <li>💢"ganttproject "</li>
-        <li>💢"EMS SQL Manager for PostgreSQL Build  "</li>
-        <li>💢"eclipse-inst-jre-win64 "</li>
-        <li>💢"VSCodeUserSetup-x64 "</li>
-        <li>💢"dotConnect for MySQL Professional"</li>
-        <li>💢"Deleaker 2022"</li>
-        <li>💢"System Mechanic Ultimate Defense "</li>
-        <li>💢"SQLMaestro PostgreSQL PHP Generator Professional "</li>
-        <li>💢"PHP Generator for MySQL Professional "</li>
-        <li>💢"PilotEdit Pro x64"</li>
-        <li>💢"Richardson EditRocket x64"</li>
-        <li>💢"CleanSweep2"</li>
-        <li>💢"SQLMaestro MS SQL PHP Generator Professional "</li>
-        <li>💢"crow-translate-win64.rar"</li>
-        <li>💢"Source Insight "</li>
-        <li>💢"Sandboxie-Plus-x64 "</li>
-        <li>💢"Jar2Exe "</li>
-        <li>💢"ES-Computing EditPlus "</li>
-        <li>💢"ByteScout BarCode Reader Business"</li>
-        <li>💢"npp.Installer.x64"</li>
-        <li>💢"Dism++"</li>
-        <li>💢"jedit5"</li>
-        <li>💢"DllAnalyzer"</li>
-        <li>💢"OOSU10"</li>
-        <li>💢"foldermonitor"</li>
-        <li>💢"Java SE Development Kit (x64)"</li>
-  
-                    </ul>
-                `,
-                'office': `
-                    <h4 class="service-section-title">تفاصيل كورس أوفيس 360:</h4>
-                    <p>تعلم استخدام حزمة مايكروسوفت أوفيس 360 باحترافية</p>
-                    <ul class="service-features">
-                 
-              <h2>💢تعالي نشوف المحتويات💢</h2>
-        <p>تحتوي علي اكثر من 80 ساعة فديو عربي من البداية الي الاحتراف خطوة خطوة</p>
-        
-        <ul class="office-courses-list">
-            <li>ـ 💢كورس Excel للمبتدئين💢</li>
-            <li>ـ 💢كورس Excel متقدم💢<br>
-                كيفية إدخال البيانات وتنظيمها في الجداول، إجراء الحسابات الأساسية، وإنشاء الرسوم البيانية لتحليل البيانات.</li>
-            <li>ـ 💢كورس ال Word💢<br>
-                تعلم كيفية إنشاء وتحرير المستندات، إدراج الصور والجداول، واستخدام الأدوات المختلفة لتنسيق المستندات بشكل احترافي</li>
-            <li>ـ 💢كورس ال PowerPoint💢<br>
-                كيفية إنشاء عروض تقديمية باستخدام الشرائح، إدراج الصور والفيديوهات، واستخدام الأدوات المختلفة لجعل العرض أكثر جذبًا</li>
-            <li>💢كورس أوتلوك (Outlook)💢<br>
-                كيفية إدارة البريد الإلكتروني، إنشاء وتخصيص الجداول الزمنية، واستخدام الأدوات المختلفة لتحسين التنظيم والتعاون.</li>
-        </ul>
-        
-        <h3>ـ حزمة برامج ميكروسوفت اوفيس مفعلة مدي الحياه</h3>
-        <ul class="office-packages">
-            <li>microsoft office 2016 (x86)</li>
-            <li>microsoft office 2019 (x86)</li>
-            <li>microsoft office 2021 (x86)</li>
-            <li>microsoft office 2016 (x64)</li>
-            <li>microsoft office 2019 (x64)</li>
-            <li>microsoft office 2021 (x64)</li>
-            <li>autodesk autocad 3D 2024</li>
-            <li>Windows 10. Pro. مفعلة مدي الحياة</li>
-        </ul>
-        
-        <h3>حزمة برامج مفعلــة (20 جيجا)</h3>
-        <ul class="activated-software">
-            <li>Web Browsers</li>
-            <li>Antivirus & Security</li>
-            <li>Audio & Music</li>
-            <li>Backup & Recovery</li>
-            <li>Data Recovery</li>
-            <li>Desktop Enhancement</li>
-            <li>Developer Tools</li>
-            <li>Download Managers</li>
-            <li>Drivers & Firmware</li>
-            <li>Educational & Business</li>
-            <li>Engineering & Simulation</li>
-            <li>File Compression</li>
-            <li>Web & Programming</li>
-            <li>Gaming Tools</li>
-            <li>Hard Disk Tools</li>
-            <li>Internet Utilities</li>
-            <li>Mobile Phone Utilities</li>
-            <li>Multimedia</li>
-            <li>Network & WiFi</li>
-            <li>Tools & Utilities</li>
-        
-                    </ul>
-                `,
-                'windows': `
-                    <h4 class="service-section-title">تفاصيل كورس ويندوز:</h4>
-               <h2>كورس الويندوز يحتوي على 6 اقسام</h2>
-    <ul class="sections-list">
-        <li>💢 قسم الويندوز</li>
-        <li>💢 قسم الاندرويد</li>
-        <li>💢 قسم التعريفات</li>
-        <li>💢 قسم الصيانة</li>
-        <li>💢 قسم ميكروسوفت اوفيس</li>
-        <li>💢 قسم البرامج المفعلة</li>
-    </ul>
-    
-    <p>ودي تفاصيل كل قسم</p>
-    
-    <h3>💢 قسم الويندوز💢</h3>
-    <ul class="windows-list">
-        <li>Windows 7 Starter (32-bit)</li>
-        <li>Windows 7 Home Basic (32-bit)</li>
-        <li>Windows 7 Home Premium (32-bit)</li>
-        <li>Windows 7 Professional (32-bit)</li>
-        <li>Windows 7 Professional VL (32-bit)</li>
-        <li>Windows 7 Ultimate (32-bit)</li>
-        <li>Windows 7 Enterprise VL (32-bit)</li>
-        <li>Windows 8.1 Single Language (32-bit)</li>
-        <li>Windows 8.1 Core (32-bit)</li>
-        <li>Windows 8.1 Professional (32-bit)</li>
-        <li>Windows 8.1 Professional Media Center (32-bit)</li>
-        <li>Windows 8.1 Industry Enterprise (32-bit)</li>
-        <li>Windows 10 Home Single Language (32-bit)</li>
-        <li>Windows 10 Home (32-bit)</li>
-        <li>Windows 10 Professional (32-bit)</li>
-        <li>Windows 10 Enterprise (32-bit)</li>
-        <li>Windows 10 Enterprise LTSC (32-bit)</li>
-        <li>Windows 7 Home Basic (64-bit)</li>
-        <li>Windows 7 Home Premium (64-bit)</li>
-        <li>Windows 7 Professional (64-bit)</li>
-        <li>Windows 7 Ultimate (64-bit)</li>
-        <li>Windows 7 Enterprise (64-bit)</li>
-        <li>Windows 7 Home Basic N (64-bit)</li>
-        <li>Windows 7 Home Premium (64-bit)</li>
-        <li>Windows 7 Professional N (64-bit)</li>
-        <li>Windows 7 Ultimate N (64-bit)</li>
-        <li>Windows 7 Enterprise N (64-bit)</li>
-        <li>Windows 8.1 (64-bit)</li>
-        <li>Windows 8.1 Single Language (64-bit)</li>
-        <li>Windows 8.1 Pro (64-bit)</li>
-        <li>Windows Embedded 8.1 Industry Enterprise (64-bit)</li>
-        <li>Windows Embedded 8.1 Industry Pro (64-bit)</li>
-        <li>Windows 8.1 Enterprise (64-bit)</li>
-        <li>Windows 8.1 N (64-bit)</li>
-        <li>Windows 8.1 Pro N (64-bit)</li>
-        <li>Windows 10 Home (64-bit)</li>
-        <li>Windows 8.1 Enterprise N (64-bit)</li>
-        <li>Windows 10 Pro for Workstations (64-bit)</li>
-        <li>Windows 10 Pro N for Workstations (64-bit)</li>
-        <li>Windows 10 Pro Single Language (64-bit)</li>
-        <li>Windows 10 Education (64-bit)</li>
-        <li>Windows 10 Education N (64-bit)</li>
-        <li>Windows 10 Enterprise (64-bit)</li>
-        <li>Windows 10 Enterprise N (64-bit)</li>
-        <li>Windows 10 Enterprise for Virtual Desktops (64-bit)</li>
-        <li>Windows 10 lot Enterprise (64-bit)</li>
-        <li>Windows 10 Home N (64-bit)</li>
-        <li>Windows 10 Pro (64-bit)</li>
-        <li>Windows 10 Pro N (64-bit)</li>
-        <li>Windows 10 Home Single Language (64-bit)</li>
-        <li>Windows 10 Pro Education (64-bit)</li>
-        <li>Windows 10 Pro Education N (64-bit)</li>
-        <li>Windows 11 Home (64-bit)</li>
-        <li>Windows 11 Home N (64-bit)</li>
-        <li>Windows 11 Team (64-bit)</li>
-        <li>Windows 11 Pro (64-bit)</li>
-        <li>Windows 11 Pro N (64-bit)</li>
-        <li>Windows 11 Enterprise (64-bit)</li>
-        <li>Windows 11 Education N (64-bit)</li>
-        <li>Windows 11 IoT Enterprise (64-bit)</li>
-        <li>Windows 11 Pro Education N (64-bit)</li>
-        <li>Windows 11 Pr N for Workstations (64-bit)</li>
-        <li>Windows 11 Home Single Language (64-bit)</li>
-        <li>Windows 11 Enterprise multi-session (64-bit)</li>
-    </ul>
-
-    <h3>💢قسم الاندرويد💢</h3>
-    <ul class="android-list">
-        <li>نظام تحويل الكمبيوتر الي نظام اندرويد كامل</li>
-        <li>PrimeOS_Classic_Installer</li>
-    </ul>
-
-    <h3>💢قسم التعريفات💢</h3>
-    <ul class="drivers-list">
-        <li>DrvCeo - DriverPack x64</li>
-    </ul>
-
-    <h3>💢قسم الصيانة💢</h3>
-    <ul class="maintenance-list">
-        <li>H_Boot_15.2_1.1 اسطوانه الصيانه</li>
-    </ul>
-
-    <h3>💢قسم ميكروسوفت اوفيس💢</h3>
-    <ul class="office-list">
-        <li>حزمة ميكروسوفت اوفيس كاملة</li>
-        <li>microsoft office 2016 (x64)</li>
-        <li>microsoft office 2019 (x64)</li>
-        <li>microsoft office 2021 (x64)</li>
-    </ul>
-
-    <h3>💢قسم البرامج المفعلة💢</h3>
-    <ul class="activated-software-list">
-        <li>حزمة برامج مفعلــة (12 جيجا)</li>
-        <li>Web Browsers</li>
-        <li>Antivirus & Security</li>
-        <li>Audio & Music</li>
-        <li>Backup & Recovery</li>
-        <li>Data Recovery</li>
-        <li>Desktop Enhancement</li>
-        <li>Developer Tools</li>
-        <li>Download Managers</li>
-        <li>Drivers & Firmware</li>
-        <li>Educational & Business</li>
-        <li>Engineering & Simulation</li>
-        <li>File Compression</li>
-        <li>Web & Programming</li>
-        <li>Gaming Tools</li>
-        <li>Hard Disk Tools</li>
-        <li>Internet Utilities</li>
-        <li>Mobile Phone Utilities</li>
-        <li>Multimedia</li>
-        <li>Network & WiFi</li>
-        <li>Tools & Utilities</li>
-    
-                    </ul>
-                `,
-                'languages': `
-                    <h4 class="service-section-title">تفاصيل كورس اللغات:</h4>
-                         <h2>💢 فلاشة اللغات 💢</h2>
-        <p>محتوي متخصص في تعليم اللغات لتحويل طموحاتك اللغوية إلى واقع ملموس</p>
-        <p>تغطية كاملة لجميع جوانب اللغات المذكورة بما في ذلك القواعد، النطق، المحادثة، والثقافة</p>
-        
-        <h3>💢 المحتوي 👇💢➥</h3>
-        <p>13 لغـة عالمية</p>
-        
-        <ul class="language-list">
-            <li>📌كورس اللغــة الانجليزية➥</li>
-            <li>📌كورس اللغــة الفرنسية➥</li>
-            <li>📌كورس اللغــة الاسبانيـة➥</li>
-            <li>📌كورس اللغــة الالمانية➥</li>
-            <li>📌كورس اللغــة الايطالية➥</li>
-            <li>📌كورس اللغــة البولندية➥</li>
-            <li>📌كورس اللغــة التايلاندية ➥</li>
-            <li>📌كورس اللغــة التركيــة➥</li>
-            <li>📌كورس اللغــة التشيكية➥</li>
-            <li>📌كورس اللغــة الروسية➥</li>
-            <li>📌كورس اللغــة العبرية➥</li>
-            <li>📌كورس اللغــة الفارسية➥</li>
-            <li>📌كورس اللغــة اليونانية➥</li>
-        </ul>
-        
-        <p>جميع اللغات ليفـــل A1 A2 B1 B2</p>
-        
-        <h4>الانجليزي :- 👇</h4>
-        <ul class="english-courses">
-            <li>كورس 12 مستوي</li>
-            <li>كورس الجامعة الامريكية</li>
-            <li>كورس محادثة</li>
-            <li>كورس تعليم اللهجة الامريكية</li>
-        </ul>
-        
-        <p>جميع الكورسات مفصلة وبجودة عاليـة</p>
- 
-                    </ul>
-                `,
-                'hr': `
-                    <h4 class="service-section-title">تفاصيل كورس HR:</h4>
-                    <p>تعلم إدارة الموارد البشرية ومهارات التوظيف</p>
-                    <ul class="service-features">
-                              <h2>فلاشة ادارة الموارد البشرية الـ (HR)➥</h2>
-        
-        <p>دبلومة HR متطورة ومكثفة فى فلاشة واحدة</p>
-        
-        <ul class="hr-topics">
-            <li>التدريب وأهمية للموظفين</li>
-            <li>التقييم وأداء الموظفين</li>
-            <li>الاجور و المكافأت</li>
-            <li>ادارة الوقت</li>
-        </ul>
-        
-        <h3>الدورات التدريبية:</h3>
-        <ul class="hr-courses">
-            <li>دبلومة لقاء الجماهير</li>
-            <li>دورة اعداد القادة</li>
-            <li>دورة البرمجة العصبية اللغوية</li>
-            <li>دورة الخرائط الذهنية</li>
-            <li>دورة العلاقات العامة</li>
-            <li>دورة تدريب المدربين</li>
-            <li>دورة خدمة العملاء</li>
-            <li>كورس التخطيط الاستراتيجي</li>
-            <li>كورس الاستعداد لاقتصاد جديد</li>
-            <li>كورس تختار رئيسـا</li>
-            <li>كورس مهارات القيادة</li>
-            <li>كورس تقوية الذاكرة</li>
-        </ul>
-        
-        <h3>مواضيع متخصصة:</h3>
-        <ul class="hr-specialized">
-            <li>احصائيات مكتب العمل والتأمينات</li>
-            <li>قانون العمل الخاص</li>
-            <li>حالات فصل العامل</li>
-            <li>اجتياز المقابلات الشخصية</li>
-            <li>التحليل الوظيفى</li>
-            <li>اجتياز المقابلات الشخصية</li>
-            <li>احصائيات مكتب العمل والتأمينات</li>
-            <li>شئون العاملين</li>
-            <li>اضطراب فرط الحركة ونقص الانتباه</li>
-            <li>التحفيز والتطوير</li>
-            <li>التقنيات لزوي الاحتياجات الخاصة</li>
-            <li>العلاقات العامة</li>
-            <li>القواعد العشرة للنجاح</li>
-            <li>حل المشكلات واتخاذ القرار➥</li>
-        
-                    </ul>
-                `,
-                'it': `
-                    <h4 class="service-section-title">تفاصيل كورس IT:</h4>
-                    <p>أساسيات تكنولوجيا المعلومات وإدارة الأنظمة</p>
-                    <ul class="service-features">
-                          <h2>فلاشة الشبكات (IT)➥</h2>
-        
-        <p>لاول مرة فلاشة مخصصة في</p>
-        <ul class="networking-features">
-            <li>• تصميم الشبكات وتنفيذها</li>
-            <li>• إدارة وصيانة الشبكات الأساسية</li>
-            <li>• معرفة كيفية استخدام الأجهزة مثل المحولات وأجهزة التوجيه لتنظيم مرور الشبكة وإنشاء شبكات مرنة</li>
-            <li>• تحديد مزايا وعيوب الشبكة الحالية</li>
-            <li>• تنفيذ أمان الشبكة والمعايير والبروتوكولات</li>
-            <li>• استكشاف مشاكل الشبكات وإصلاحها</li>
-            <li>• دعم انشاء الشبكات الافتراضية</li>
-        </ul>
-        
-        <h3>واقسامها كالتالي</h3>
-        <ul class="networking-courses">
-            <li>CCNA Security )210-260(</li>
-            <li>CCNA & CCNP</li>
-            <li>MCSE</li>
-            <li>N+</li>
-            <li>Cisco Networking</li>
-            <li>Connecting Networks</li>
-            <li>Introduction to Networks</li>
-            <li>Routing & Switching</li>
-            <li>Scaling Networks</li>
-            <li>service strategy</li>
-            <li>service Design</li>
-            <li>service Transition</li>
-            <li>service operation</li>
-            <li>continual service improvement</li>
-        </ul>
-        
-        <h3>البرامج</h3>
-        <ul class="networking-software">
-            <li>OmniPeek Enterprise 5.1.4</li>
-            <li>mikrotik-5.21</li>
-            <li>VMware.Workstation</li>
-            <li>Plexim.Plecs.Standalone.v3.6.5.</li>
-            <li>Getintopc.com_mikrotik-6.22</li>
-            <li>Mikrotik اسطوانة مايكروتك</li>
-            <li>kali-linux كالى لينكس</li>
-
-                    </ul>
-                `,
-                'phones': `
-                    <h4 class="service-section-title">تفاصيل ورشة صيانة الهواتف:</h4>
-              
-        <h2>فلاشة الصيانة➥</h2>
-        
-        <p>فلاشة تحتوي علي خبرة كبار الفنيين في صيانة الاجهزة المنزلية بطريقة سهلة ومبسطة</p>
-        <p>"هل تريد أن تتعلم صيانة الكمبيوتر والشاشات والموبايل بنفسك وتوفر فلوسك على صيانة الخبراء؟ إذن عليك بتلك الفلاشة المميزة والتي تحتوي على كل ما تحتاجه لتعلم صيانة الأجهزة بنفسك!</p>
-        
-        <p>تحتوي الفلاشة على كورسات صيانة كمبيوتر مفصلة ومصورة بالفيديو، بالإضافة إلى كورسات صيانة شاشات وموبايلات باللغة العربية</p>
-        
-        <p>ستحصل على جميع الفيديوهات والطرق اللازمة لتحديد الأعطال وإصلاحها بنفسك بطريقة سهلة ومفهومة، وذلك بفضل خبرة فنيين متخصصين في مجال صيانة الأجهزة.</p>
-        
-        <p>سوف تتعلم كيفية تشخيص وإصلاح أي مشاكل في الكمبيوتر والشاشات والموبايلات بنفسك، وستتمكن من توفير المال والوقت الذي تنفقه على صيانة الأجهزة.</p>
-        
-        <h3>المحتويات ➥</h3>
-        <ul class="maintenance-courses">
-            <li>ـ دورة صيانة شاشة الـ LCD</li>
-            <li>ـ الدبلومة المتكاملة لصيانة الحاسب</li>
-            <li>ـ دورة تعليم تجميع وصيانة الكمبيوتر</li>
-            <li>ـ دورة احترف الصيانة</li>
-            <li>ـ اسطوانة تعليم صيانة الويندوز +تسطيب الويندوز</li>
-            <li>ـ اسطوانةاستعادة الملفات المحذوفة بوت</li>
-            <li>ـ دورة الصيانة المنزلية</li>
-            <li>ـ دورة تعلم تركيب الأسلاك الكهربائية في منزلك</li>
-            <li>ـ دورة تعلم صيانة الكمبيوتر بدون تعقيد</li>
-            <li>ـ تعليم اسطوانة الصيانة الهيرنز بوت</li>
-            <li>ـ دورة تكييف وتبريد وصيانة</li>
-            <li>ـ دورة حماية الكمبيونر</li>
-            <li>ـ دورة صيانة الكمبيوتر-A pils</li>
-            <li>ـ دورة كشف واصلاح الباد سيكتور للهارد ديسك</li>
-            <li>ـ شرح اعدادت البيوس ياللغة العربية</li>
-            <li>ـ دورة صيانة الاب توب</li>
-            <li>ـ دورة صيانة الايفون فيديو</li>
-            <li>ـ صيانة الموبيلات بجميع انواعه والتابلت</li>
-            <li>ـ دورة صيانة سامسونج وال جى</li>
-            <li>ـ دورة صيانة وتركيب كاميرات المراقبة</li>
-            <li>ـ كورس احتراف صيانة المازربورد</li>
-            <li>ـ كورس الصيانة الإلكترونية</li>
-            <li>ـ كورس الكهرباء المنزلية فيديو بالعربى</li>
-            <li>ـ كورس تعليم السباكة</li>
-            <li>ـ كورس ويندوز</li>
-        </ul>
-        
-        <h3>البرامج ....</h3>
-        <ul class="maintenance-software">
-            <li>اسطوانة أكرونس Acronis 2k10 UltraPack 7.24.2</li>
-            <li>اسطوانة الانقاذ وإزالة الفيروسات</li>
-            <li>اسطوانة تقسيم الهارديسك</li>
-            <li>اسطوانة هيرنز بوت 2023 Hiren’s BootCD PE x64 1.0.1</li>
-            <li>اسطوانة ويندوز الصيانة 8ز10</li>
-            <li>أفضل 5 برامج لاستعادة الملفات المحذوفة</li>
-            <li>برامج اصلاح الهارد والبادسيكتور</li>
-            <li>برنامج تصميم اللوحات الإليكترونية المطبوعة</li>
-            <li>Hard_Disk_Sentinel_Pro_5.40.8</li>
-     
-                    </ul>
-                `,
-                'home': `
-                    <h4 class="service-section-title">تفاصيل كورس صيانة الأدوات المنزلية:</h4>
-                    <p>تعلم إصلاح الأجهزة المنزلية الأساسية</p>
-                    <ul class="service-features">
-                          <h2>فلاشة الصيانة➥</h2>
-        
-        <div class="intro-section">
-            <p>فلاشة تحتوي علي خبرة كبار الفنيين في صيانة الاجهزة المنزلية بطريقة سهلة ومبسطة</p>
-            <p class="highlight-quote">"هل تريد أن تتعلم صيانة الكمبيوتر والشاشات والموبايل بنفسك وتوفر فلوسك على صيانة الخبراء؟ إذن عليك بتلك الفلاشة المميزة والتي تحتوي على كل ما تحتاجه لتعلم صيانة الأجهزة بنفسك!</p>
-            
-            <div class="features">
-                <p>تحتوي الفلاشة على:</p>
-                <ul>
-                    <li>كورسات صيانة كمبيوتر مفصلة ومصورة بالفيديو</li>
-                    <li>كورسات صيانة شاشات وموبايلات باللغة العربية</li>
-                </ul>
-            </div>
-            
-            <div class="benefits">
-                <p>ستحصل على:</p>
-                <ul>
-                    <li>جميع الفيديوهات والطرق اللازمة لتحديد الأعطال وإصلاحها بنفسك</li>
-                    <li>خبرة فنيين متخصصين في مجال صيانة الأجهزة</li>
-                    <li>تعلم كيفية تشخيص وإصلاح المشاكل في الكمبيوتر والشاشات والموبايلات</li>
-                    <li>توفير المال والوقت الذي تنفقه على صيانة الأجهزة</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="contents-section">
-            <h3>المحتويات ➥</h3>
-            <div class="courses-list">
-                <ul>
-                    <li>ـ دورة صيانة شاشة الـ LCD</li>
-                    <li>ـ الدبلومة المتكاملة لصيانة الحاسب</li>
-                    <li>ـ دورة تعليم تجميع وصيانة الكمبيوتر</li>
-                    <li>ـ دورة احترف الصيانة</li>
-                    <li>ـ اسطوانة تعليم صيانة الويندوز +تسطيب الويندوز</li>
-                    <li>ـ اسطوانةاستعادة الملفات المحذوفة بوت</li>
-                    <li>ـ دورة الصيانة المنزلية</li>
-                    <li>ـ دورة تعلم تركيب الأسلاك الكهربائية في منزلك</li>
-                    <li>ـ دورة تعلم صيانة الكمبيوتر بدون تعقيد</li>
-                    <li>ـ تعليم اسطوانة الصيانة الهيرنز بوت</li>
-                    <li>ـ دورة تكييف وتبريد وصيانة</li>
-                    <li>ـ دورة حماية الكمبيونر</li>
-                    <li>ـ دورة صيانة الكمبيوتر-A pils</li>
-                    <li>ـ دورة كشف واصلاح الباد سيكتور للهارد ديسك</li>
-                    <li>ـ شرح اعدادت البيوس ياللغة العربية</li>
-                    <li>ـ دورة صيانة الاب توب</li>
-                    <li>ـ دورة صيانة الايفون فيديو</li>
-                    <li>ـ صيانة الموبيلات بجميع انواعه والتابلت</li>
-                    <li>ـ دورة صيانة سامسونج وال جى</li>
-                    <li>ـ دورة صيانة وتركيب كاميرات المراقبة</li>
-                    <li>ـ كورس احتراف صيانة المازربورد</li>
-                    <li>ـ كورس الصيانة الإلكترونية</li>
-                    <li>ـ كورس الكهرباء المنزلية فيديو بالعربى</li>
-                    <li>ـ كورس تعليم السباكة</li>
-                    <li>ـ كورس ويندوز</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="software-section">
-            <h3>البرامج المتضمنة:</h3>
-            <div class="software-list">
-                <ul>
-                    <li>اسطوانة أكرونس Acronis 2k10 UltraPack 7.24.2</li>
-                    <li>اسطوانة الانقاذ وإزالة الفيروسات</li>
-                    <li>اسطوانة تقسيم الهارديسك</li>
-                    <li>اسطوانة هيرنز بوت 2023 Hiren's BootCD PE x64 1.0.1</li>
-                    <li>اسطوانة ويندوز الصيانة 8/10</li>
-                    <li>أفضل 5 برامج لاستعادة الملفات المحذوفة</li>
-                    <li>برامج اصلاح الهارد والبادسيكتور</li>
-                    <li>برنامج تصميم اللوحات الإليكترونية المطبوعة</li>
-                    <li>Hard_Disk_Sentinel_Pro_5.40.8</li>
-           
-                    </ul>
-                `,
-                'hard-case': `
-                    <h4 class="service-section-title">تفاصيل جراب حماية الهارد:</h4>
-                    <p>حافظ على هاردك من الصدمات مع جراب الحماية عالي الجودة</p>
-                    <ul class="service-features">
-                        <li>مصنوع من مواد عالية الجودة</li>
-                        <li>حماية ضد الصدمات والسقوط</li>
-                        <li>تصميم أنيق وسهل الحمل</li>
-                        <li>مناسب لجميع أحجام الهاردات</li>
-                        <li>ضمان لمدة عام ضد عيوب الصناعة</li>
-                    </ul>
-                `,
-                'default': `
-                    <p>تفاصيل إضافية عن هذه الخدمة سيتم عرضها هنا</p>
-                `
-            };
-
-            // Service details modal
-            const modal = document.getElementById('serviceModal');
-            const modalTitle = document.getElementById('modalTitle');
-            const modalContent = document.getElementById('modalContent');
-            const serviceImage = document.getElementById('serviceImage');
-            const serviceDescription = document.getElementById('serviceDescription');
-            const servicePrice = document.getElementById('servicePrice');
-            const closeModal = document.querySelector('.close-modal');
-            const detailButtons = document.querySelectorAll('.details-btn');
-            
-            detailButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const service = this.getAttribute('data-service');
-                    const imageSrc = this.getAttribute('data-image');
-                    const card = this.parentElement;
-                    
-                    modalTitle.textContent = card.querySelector('.service-title')?.textContent || 
-                                          card.querySelector('h4')?.textContent;
-                    serviceImage.src = imageSrc;
-                    serviceImage.alt = `${service} Image`;
-                    
-                    // عرض التفاصيل المخصصة لكل خدمة
-                    serviceDescription.innerHTML = serviceDetails[service] || serviceDetails['default'];
-                    
-                    servicePrice.textContent = `السعر: ${card.querySelector('.service-price')?.textContent || '30 جنيه للواحد'}`;
-                    
-                    modal.classList.add('active');
-                });
-            });
-            
-            closeModal.addEventListener('click', function() {
-                modal.classList.remove('active');
-            });
-            
-            window.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.classList.remove('active');
-                }
-            });
-            
-            // Update order summary when services are selected
-            const serviceOptions = document.querySelectorAll('.service-option');
-            serviceOptions.forEach(option => {
-                option.addEventListener('change', updateOrderSummary);
-            });
-            
-            function updateOrderSummary() {
-                const itemsList = document.getElementById('selectedItemsList');
-                itemsList.innerHTML = '';
-                
-                let total = 0;
-                
-                // Product price
-                const productPrice = parseFloat(priceInput.value) || 0;
-                if (productPrice > 0) {
-                    const productName = productInput.value;
-                    addItemToList(itemsList, productName, productPrice);
-                    total += productPrice;
-                }
-                
-                // Shipping cost
-                const shippingText = shippingCostInput.value;
-                let shippingCost = 0;
-                
-                if (shippingText.includes('35')) {
-                    shippingCost = 35;
-                } else if (shippingText.includes('40')) {
-                    shippingCost = 40;
-                } else if (shippingText.includes('45')) {
-                    shippingCost = 45;
-                } else if (shippingText.includes('50')) {
-                    shippingCost = 50;
-                }
-                
-                if (shippingCost > 0) {
-                    addItemToList(itemsList, 'مصاريف الشحن', shippingCost);
-                    total += shippingCost;
-                }
-                
-                // Hard case quantity
-                const caseQty = parseInt(caseQuantity.value) || 0;
-                if (caseQty > 0) {
-                    const casePrice = caseQty * 30;
-                    addItemToList(itemsList, `جراب حماية الهارد (${caseQty})`, casePrice);
-                    total += casePrice;
-                }
-                
-                // Services cost
-                document.querySelectorAll('.service-option:checked').forEach(option => {
-                    const servicePrice = parseFloat(option.getAttribute('data-price'));
-                    const serviceName = option.value;
-                    addItemToList(itemsList, serviceName, servicePrice);
-                    total += servicePrice;
-                });
-                
-                if (itemsList.children.length === 0) {
-                    itemsList.innerHTML = '<p style="text-align: center; color: #999;">سيظهر هنا تفاصيل الطلب المختارة</p>';
-                }
-                
-                // Update total
-                document.getElementById('totalPrice').textContent = total.toFixed(2) + ' جنيه';
-            }
-            
-            function addItemToList(container, name, price) {
-                const itemRow = document.createElement('div');
-                itemRow.className = 'item-row';
-                
-                const itemName = document.createElement('span');
-                itemName.className = 'item-name';
-                itemName.textContent = name;
-                
-                const itemPrice = document.createElement('span');
-                itemPrice.className = 'item-price';
-                itemPrice.textContent = price.toFixed(2) + ' جنيه';
-                
-                itemRow.appendChild(itemName);
-                itemRow.appendChild(itemPrice);
-                container.appendChild(itemRow);
-            }
-            
-            // Form validation and WhatsApp submission
-            const orderForm = document.getElementById('orderForm');
-            const submitButton = document.getElementById('submitOrder');
-            
-            submitButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Validate form
-                const fullName = document.getElementById('fullName').value;
-                const phone = document.getElementById('phone').value;
-                const governorate = governorateSelect.value;
-                const product = productInput.value;
-                const price = priceInput.value;
-                
-                if (!fullName || fullName.split(' ').length < 2) {
-                    alert('يجب إدخال اسمين على الأقل');
-                    return;
-                }
-                
-                if (!phone || !/^01[0-9]{9}$/.test(phone)) {
-                    alert('يجب إدخال رقم هاتف مصري صحيح (11 رقم)');
-                    return;
-                }
-                
-                if (!governorate) {
-                    alert('يجب اختيار المحافظة');
-                    return;
-                }
-                
-                if (!product) {
-                    alert('يجب اختيار المنتج أو الخدمة');
-                    return;
-                }
-                
-                if (!price || parseFloat(price) <= 0) {
-                    alert('يجب اختيار منتج بسعر صحيح');
-                    return;
-                }
-                
-                // Prepare WhatsApp message
-                const orderNumber = document.getElementById('orderNumber').textContent;
-                const altPhone = document.getElementById('altPhone').value;
-                const shippingCost = shippingCostInput.value;
-                const caseQty = parseInt(caseQuantity.value) || 0;
-                
-                let services = '';
-                
-                // Add hard case to services if selected
-                if (caseQty > 0) {
-                    services += `- جراب حماية الهارد (${caseQty}) (${caseQty * 30} جنيه)\n`;
-                }
-                
-                // Add other services
-                document.querySelectorAll('.service-option:checked').forEach(option => {
-                    services += `- ${option.value} (${option.getAttribute('data-price')} جنيه)\n`;
-                });
-                
-                if (!services) {
-                    services = 'لا توجد خدمات إضافية';
-                }
-                
-                const total = document.getElementById('totalPrice').textContent;
-                
-                const message = `*طلب جديد - Drax لخدمات الكمبيوتر*
-                
-*رقم الأوردر:* Drax-ORD${orderNumber}
-                
-*بيانات العميل:*
-- الاسم: ${fullName}
-- الهاتف: ${phone}
-- هاتف بديل: ${altPhone || 'لا يوجد'}
-- المحافظة: ${governorate}
-- مصاريف الشحن: ${shippingCost}
-                
-*تفاصيل الطلب:*
-- المنتج/الخدمة: ${product}
-- السعر: ${price} جنيه
-                
-*الخدمات الإضافية:*
-${services}
-                
-*الإجمالي:* ${total}
-                
-شكراً لثقتكم في Drax لخدمات الكمبيوتر!`;
-                
-                // Encode message for WhatsApp URL
-                const encodedMessage = encodeURIComponent(message);
-                const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
-                
-                // Open WhatsApp
-                window.open(whatsappUrl, '_blank');
-            });
-        });
-    </script>
-</body>
-</html>>
+                        <button type="button" class="quantity-btn" id="increaseCase"
